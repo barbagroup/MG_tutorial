@@ -1,9 +1,10 @@
-MG_tutorial
-===========
+# Multigrid Methods Tutorial
+-----------------------------
 
-Multigrid Tutorial 
+## Progress (finished lessons):
+* Lesson 0: Convergence of Errors
 
 
-Reference:
-===========
+
+## Reference:
 W.L. Briggs, V.E. Henson and S.F. McCormick, A Multigrid Tutorial, 2nd. ed., SIAM, Philadelphia, 2000
