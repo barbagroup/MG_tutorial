@@ -3,6 +3,7 @@
 
 ## Progress (finished lessons):
 * Lesson 0: Convergence of Errors
+* Lesson 1: Basic Multigrid Scheme
 
 
 

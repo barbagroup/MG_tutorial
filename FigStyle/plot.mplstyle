@@ -1,6 +1,7 @@
 axes.titlesize: 20
 axes.labelsize: 18
 axes.grid : True
+axes.linewidth: 2.0
 
 figure.dpi : 100
 
