@@ -23,9 +23,11 @@ def Init1DLaplaceAb(N):
     '''
     A = np.zeros((N, N))
     b = np.zeros(N)
+    dx = 1. / float(N - 1)
+    
     A[0, 0] = 1.0
     for i in range(1, N-1):
-        A[i, i-1:i+2] = [1.0, -2.0, 1.0]
+        A[i, i-1:i+2] = [-1.0, 2.0, -1.0]
     A[N-1, N-1] = 1.0
     return A, b
 
@@ -36,3 +38,15 @@ def InitValue(N, k):
     '''
     return np.array([np.sin(float(i * k) * np.pi / float(N-1))
                     for i in range(N)])
+
+
+def plotAssist(title='', xlmt='', ylmt='', 
+               xlbl=r"$x$", ylbl=r"$v$", legArg={'loc':0, 'numpoints':1}):
+    plt.title(title);
+    if xlmt != '':
+        plt.xlim(xlmt);
+    if ylmt != '':
+        plt.ylim(ylmt);
+    plt.xlabel(xlbl);
+    plt.ylabel(ylbl);
+    plt.legend(**legArg);
